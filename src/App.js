@@ -14,7 +14,7 @@ import Hint from './components/Hint/Hint';
 import playIcon from './assets/icons/playdark.png';
 import resetIcon from './assets/icons/reset.jpg';
 import titleImg from './assets/imgs/title.svg';
-import hintImg from './assets/imgs/hint.svg';
+import hintImg from './assets/imgs/hint.png';
 import nameImg from './assets/imgs/name.svg';
 
 import CODE_KEY from './constants/keys';
@@ -82,6 +82,7 @@ const App = ({ className, start, reset, goDown, goLeft, goRight, goUp, grid, isS
           <Button icon={resetIcon} onClick={reset} />
         </ButtonSet>
       </div>
+      <Hint img={hintImg} className='hint'/>
     </div>
   )
 }
