@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/PrimerProyectoIA/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/PrimerProyectoIA/static/js/main.81b1231d.chunk.js",
-    "main.js.map": "/PrimerProyectoIA/static/js/main.81b1231d.chunk.js.map",
-    "runtime-main.js": "/PrimerProyectoIA/static/js/runtime-main.8f735cdb.js",
-    "runtime-main.js.map": "/PrimerProyectoIA/static/js/runtime-main.8f735cdb.js.map",
-    "static/js/2.50f62dba.chunk.js": "/PrimerProyectoIA/static/js/2.50f62dba.chunk.js",
-    "static/js/2.50f62dba.chunk.js.map": "/PrimerProyectoIA/static/js/2.50f62dba.chunk.js.map",
-    "static/js/3.107e10be.chunk.js": "/PrimerProyectoIA/static/js/3.107e10be.chunk.js",
-    "static/js/3.107e10be.chunk.js.map": "/PrimerProyectoIA/static/js/3.107e10be.chunk.js.map",
+    "main.js": "/PrimerProyectoIA/static/js/main.6f728b00.chunk.js",
+    "main.js.map": "/PrimerProyectoIA/static/js/main.6f728b00.chunk.js.map",
+    "runtime-main.js": "/PrimerProyectoIA/static/js/runtime-main.d8f11e04.js",
+    "runtime-main.js.map": "/PrimerProyectoIA/static/js/runtime-main.d8f11e04.js.map",
+    "static/js/2.a23ab8c3.chunk.js": "/PrimerProyectoIA/static/js/2.a23ab8c3.chunk.js",
+    "static/js/2.a23ab8c3.chunk.js.map": "/PrimerProyectoIA/static/js/2.a23ab8c3.chunk.js.map",
     "index.html": "/PrimerProyectoIA/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/PrimerProyectoIA/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.50f62dba.chunk.js.LICENSE.txt": "/PrimerProyectoIA/static/js/2.50f62dba.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/PrimerProyectoIA/static/media/logo.6ce24c58.svg"
+    "static/js/2.a23ab8c3.chunk.js.LICENSE.txt": "/PrimerProyectoIA/static/js/2.a23ab8c3.chunk.js.LICENSE.txt",
+    "static/js/main.6f728b00.chunk.js.LICENSE.txt": "/PrimerProyectoIA/static/js/main.6f728b00.chunk.js.LICENSE.txt",
+    "static/media/hint.62355b2a.png": "/PrimerProyectoIA/static/media/hint.62355b2a.png",
+    "static/media/name.3b3755d3.svg": "/PrimerProyectoIA/static/media/name.3b3755d3.svg",
+    "static/media/playdark.e2e81329.png": "/PrimerProyectoIA/static/media/playdark.e2e81329.png",
+    "static/media/reset.91d32a81.jpg": "/PrimerProyectoIA/static/media/reset.91d32a81.jpg",
+    "static/media/title.3cd67ec4.svg": "/PrimerProyectoIA/static/media/title.3cd67ec4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8f735cdb.js",
-    "static/js/2.50f62dba.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.81b1231d.chunk.js"
+    "static/js/runtime-main.d8f11e04.js",
+    "static/js/2.a23ab8c3.chunk.js",
+    "static/js/main.6f728b00.chunk.js"
   ]
 }
