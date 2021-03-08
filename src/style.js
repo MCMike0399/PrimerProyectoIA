@@ -1,6 +1,6 @@
 export const STYLE = {
-    primaryColor: '#30353b',
-    bg: '#2c2f33',
+    primaryColor: '#99aab5',
+    bg: '#23272a',
     fontFamily: 'Pattaya'
   }
   

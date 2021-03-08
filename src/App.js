@@ -11,8 +11,8 @@ import StyledTitle from './components/Title/Title';
 import Hint from './components/Hint/Hint';
 
 //Assets
-import playIcon from './assets/icons/play.svg';
-import resetIcon from './assets/icons/reset.svg';
+import playIcon from './assets/icons/playdark.png';
+import resetIcon from './assets/icons/reset.jpg';
 import titleImg from './assets/imgs/title.svg';
 import hintImg from './assets/imgs/hint.svg';
 import nameImg from './assets/imgs/name.svg';
@@ -74,14 +74,14 @@ const App = ({ className, start, reset, goDown, goLeft, goRight, goUp, grid, isS
   return (
     <div className={className}>
       <div className='mid'>
-        <StyledTitle img={titleImg} text='Solved with A* Algorithm' />
+        <StyledTitle text='Alexander Perelman | Zara Ubaldo | Guillermo Naranjo | Miguel Angel Quintero' />
+        <StyledTitle text='' />
         <GridSquares grid={grid} squareShift={90}/>
         <ButtonSet>
           <Button icon={playIcon} onClick={start} />
           <Button icon={resetIcon} onClick={reset} />
         </ButtonSet>
       </div>
-      <Hint text='Moves' img={hintImg} className='hint' />
     </div>
   )
 }
