@@ -49,7 +49,7 @@ function State (arr, custo = 0, altura = 0) {
 // Testa se um ESTADO eh o final
 function isNumberFinal (state) {
   // console.log(st.number)
-  return state.str === '123456780'
+  return state.str === '012345678'
 }
 // ======================================================================================================================
 // ================================================= UNTIL =========================================================
