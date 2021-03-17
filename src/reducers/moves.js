@@ -1,7 +1,20 @@
 import { SET_MOVE, VERIFY_MOVE, RESET, SOLVING } from '../constants/actionTypes'
 import { sumCoordinates, isValidMove, scalarMult } from './_utils'
 
-const gridData = [8, 3, 2, 7, 4, 5, 1, 6, 0]
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+let opciones = [[1,4,2,3,7,5,6,8,0],
+                [8,7,6,5,4,3,2,1,0],
+                [1,4,0,6,3,2,7,8,5],
+                [7,6,8,0,2,3,4,5,1],
+                [7,2,0,4,1,6,3,8,5],
+                [4,2,7,6,1,3,0,8,5],
+                [0,5,4,1,3,7,6,8,2]]
+
+let r = getRandomInt(0,opciones.length)
+const gridData = opciones[r]
 
 const grid = gridData.map((digit, i) => {
   return {
@@ -16,10 +29,18 @@ const grid = gridData.map((digit, i) => {
     }
   }
 })
-
-const getBlankPosition = grid => {
+/*const getBlankPosition = grid => {
   const { pos } = grid.filter(d => d.digit === 0)[0]
-  return pos
+  console.log(pos)
+  return {"x":2,"y":0}
+}*/
+const getBlankPosition = grid => {
+  let index = gridData.indexOf(0)
+  let y = Math.trunc(index/3)
+  let x = index%3
+  console.log(x)
+  console.log(y)
+  return {"x":x,"y":y}
 }
 
 const initialState = {
@@ -56,7 +77,7 @@ const resolveSetMove = state => {
   const gridData = oldGridData.map(d => {
     return d === 0 ? targetDigit : d === targetDigit ? 0 : d
   })
-
+  //console.log(gridData)
   return {
     grid,
     gridData,

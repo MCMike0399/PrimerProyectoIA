@@ -21,13 +21,13 @@ import CODE_KEY from './constants/keys';
 
 const _keyHandler = (event, state, callback) => {
   const code = event.keyCode !== 0 ? event.keyCode : event.charCode
-  console.log(event, event.keyCode, event.charCode, code)
+  //console.log(event, event.keyCode, event.charCode, code)
   // notSolving
   if (!state.isSolving) {
     // this.resolveCode(code)
     callback(code)
   } else {
-    console.log('STOP!')
+    //console.log('STOP!')
   }
 }
 
@@ -54,7 +54,7 @@ const _resolveCode = (code, actions) => {
       actions.start()
       break
     default:
-      console.log(code)
+      //console.log(code)
   }
 }
 
@@ -79,7 +79,6 @@ const App = ({ className, start, reset, goDown, goLeft, goRight, goUp, grid, isS
         <GridSquares grid={grid} squareShift={90}/>
         <ButtonSet>
           <Button icon={playIcon} onClick={start} />
-          <Button icon={resetIcon} onClick={reset} />
         </ButtonSet>
       </div>
       <Hint img={hintImg} className='hint'/>

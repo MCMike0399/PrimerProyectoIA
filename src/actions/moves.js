@@ -30,11 +30,11 @@ function goreset () {
     const {
       moves: { isSolving }
     } = getState()
-    console.log(isSolving)
+    //console.log(isSolving)
     if (!isSolving) {
       dispatch(reset())
     } else {
-      console.log("Is Solving! You can't reset now!")
+      //console.log("Is Solving! You can't reset now!")
     }
   }
 }
@@ -44,7 +44,7 @@ function start () {
     const {
       moves: { gridData, isSolving }
     } = getState()
-    console.log(gridData, isSolving)
+    //console.log(gridData, isSolving)
     // notSolving
     if (!isSolving) {
       const validMoves = helpers.solveGrid(gridData)
@@ -76,7 +76,7 @@ function start () {
         }, 260)
       })
     } else {
-      console.log('ALREADY SOLVING! :D')
+      //console.log('ALREADY SOLVING! :D')
     }
   }
 }

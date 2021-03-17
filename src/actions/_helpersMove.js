@@ -4,7 +4,7 @@ import CODE_KEY from '../constants/keys'
 const toMatrix = list => [list.slice(0, 3), list.slice(3, 6), list.slice(6, 9)]
 
 const symbolToMove = s => {
-  console.log(s)
+  //console.log(s)
   switch (s) {
     case 'v':
       return CODE_KEY.UP
@@ -18,9 +18,12 @@ const symbolToMove = s => {
 }
 
 const solveGrid = grid => {
+  console.log(grid)
   const result = AESTRELA(new State(toMatrix(grid)))
   const moves = result.resultado_busca.estado_resultado.moves
+  
   const validMoves = moves.map(o => symbolToMove(o.simbol))
+  console.log(moves)
   return validMoves
 }
 

@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
 
-console.log(store.getState())
+//console.log(store.getState())
 
 ReactDOM.render(
   <Provider store={store}>
