@@ -1,16 +1,9 @@
-/*!
- * PriorityQueue - Data Structure - JS
- * Copyright(c) 2018 Jeová Pereira Gomes (@jeovazero <contato@jeova.ninja>)
- * MIT Licensed
- */
 
 function PQ () {
   var queue = []
   this.up = function () {
     var filho = queue.length
     var pai = x => Math.floor(x / 2)
-    // Enquanto o filho nao chegar na raiz
-    // e o filho for menor que o pai
     while (filho >= 2 && compare(filho, pai(filho)) === true) {
       swap(pai(filho), filho)
       filho = pai(filho)
@@ -19,9 +12,7 @@ function PQ () {
   this.down = function (index) {
     var pai = index
     var filho = x => x * 2
-
     var f1
-
     var f2
     var len = queue.length
     var lenHalf = Math.floor(len / 2)
